@@ -1,20 +1,21 @@
-function accordionToogle () {
-    console.log('object');
-    if(document.querySelector('.table-block__accordion-head')) {
-        let headList = document.querySelectorAll('.table-block__accordion-head');
-        let bodyList = document.querySelectorAll('.table-block__accordion-body');
-
-        headList.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const id = e.target.getAttribute('data-target').replace('#', '');
-
-                headList.forEach(item => item.classList.remove('active'));
-                bodyList.forEach(item => item.classList.remove('active'));
-
-                item.classList.add('active');
-                document.getElementById(id).classList.add('active');
-            })
-        })   
+document.addEventListener('DOMContentLoaded', () => {
+    function accordionToggle() {
+        if(document.querySelector('.table-block__accordion-head')) {
+            let headList = document.querySelectorAll('.table-block__accordion-head');
+    
+            headList.forEach(item => {
+                item.addEventListener('click', () => {
+                    const data = item.dataset.head;
+                    const id = data.replace('#', '');
+                    console.log(id);
+    
+                    item.classList.toggle('open');
+                    if(document.getElementById(id)) {
+                        document.getElementById(id).classList.toggle('open');
+                    }
+                })
+            })   
+        }
     }
-}
+    accordionToggle();
+})
