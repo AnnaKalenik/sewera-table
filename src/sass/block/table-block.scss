@@ -1,0 +1,203 @@
+.table-block {
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    &__title-2 {
+        padding: 0 0 15px !important;
+        letter-spacing: 0.01em;
+    }
+
+    &__date {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #405460;
+        padding: 6px 10px;
+        background: #F6F6F7;
+        border-radius: 43px;
+
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url('../images/table-icon-done.svg');
+        }
+    }
+
+    &__wrap {
+        padding-top: 20px;
+    }
+
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    & thead {
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400 !important;
+        color: #6F7F87;
+        text-transform: none;
+    }
+
+    & tbody {
+        font-size: 20px;
+        line-height: 140%;
+        font-weight: 400;
+        color: #102938;
+    }
+
+    & tr {
+        display: grid !important;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        margin-top: -1px;
+    }
+
+    & tbody tr {
+        border-top: 1px solid #CFD4D7;
+        border-bottom: 1px solid #CFD4D7;
+    }
+
+    & tr:nth-child(2n+1) {
+        background: none !important;
+    }
+
+    & th {
+        font-weight: 400 !important;
+    }
+
+    & td,
+    & th {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12.5px 20px;
+    }
+
+    & td:first-child,
+    & th:first-child  {
+        justify-content: flex-start;
+        
+    }
+
+    & td:last-child,
+    & th:last-child {
+        justify-content: flex-end;
+    } 
+
+    & td:last-child {
+        font-weight: 700;
+    } 
+
+    &__accordion-head {
+        cursor: pointer;
+        margin-bottom: 2px !important;
+        border-bottom: none !important;
+
+        & td:first-child {
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+
+            transition: color 0.3s ease;
+
+            &::after {
+                content: '';
+                width: 12px;
+                height: 7px;
+                background: url('../images/table-icon-arrow.svg');
+            }
+        }
+
+        & .active td:first-child {
+            &::after {
+                transform: rotate(-360deg);
+            }
+        }
+
+        &:hover td:first-child {
+            color: #009CD9;
+        }
+    }
+
+    &__accordion-body {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        border: none !important;
+
+        // transform: scale(0) !important;
+        // height: 0;
+
+        & tbody {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        & tbody tr {
+            border: none !important;
+        }
+
+        & tbody tr:first-child {
+            padding-top: 8px;
+        }
+
+        & tbody tr:last-child {
+            padding-bottom: 12.5px;
+        }
+
+        & tbody td {
+            height: 100%;   
+            font-size: 16px;
+            line-height: 150%;
+
+            padding: 0 20px !important;
+        }
+
+        & tbody td:last-child {
+            font-weight: 400;
+        }
+    }
+
+    &__accordion-body > td{
+        padding: 0 !important;
+        height: 100% !important;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #102938;
+
+        background: #F6F6F7;
+        border-radius: 8px;
+        padding: 15px 10px;
+        margin-top: 20px;
+
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            left: 10px;
+            top: 10px;
+            background: url('../images/table-icon-info.svg');
+        }
+    }
+}
+
+@import "table-block-media";

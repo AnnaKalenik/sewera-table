@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ HEADER FOOTER
+*/
+.head-sub, .search-form {background: #011625}
+.head-main, .head-nav-wrap {background: #0A2332}
+.site-header a, .head-sub ul a, .head-main a, .head-nav-wrap a  {color:#fff}
+
+.search-form .sbm-search {background-image:url('/image/catalog/promotion/black/search.svg');}
+
+::-webkit-input-placeholder {color:    #95A2A9 !important}
+:-moz-placeholder {color:    #95A2A9 !important;opacity:  1;}
+::-moz-placeholder {color:    #95A2A9 !important;opacity:  1;}
+:-ms-input-placeholder {color:    #95A2A9 !important;}
+::-ms-input-placeholder {color:    #95A2A9 !important;}
+::placeholder {color:    #95A2A9 !important;}
+input[type=email], input[type=password], input[type=tel], input[type=text], textarea {color:#95A2A9}
+
+.site-footer {background: #102938}
+.foot-main, .foot-addr {border-bottom-color: rgb(255 255 255 / 10%)}
+.foot-main .btn {color:#F9FAFA !important}
+.foot-addr p {color:rgb(149 162 169 / 50%);}
+.foot-addr strong, .foot-addr strong a {font-weight: 500;color:#95A2A9 !important}
+.foot-addr strong + strong::before {background: #95A2A9}
+.site-footer .h-5 {color:white}
+.site-footer a {color:#95A2A9 !important}
+.copy-wrap * {color:#95A2A9 !important}
+.copy-wrap a {color:#009CD9 !important}
+
+.brdk, .brdk a, .answ-form {color:#95A2A9}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ GLOBAL
+*/
+.bg {background:#001221}
+.page-width {background: #001524}
+.box-main h1:after {content:']'}
+.col-with-bg .col-bg {opacity:.1}
+
+
+.promo-page .w-popup {
+    background: #0A2332;
+    border: 1px solid #009CD9;
+}
+.promo-page .w-popup .sbmts-bl {background: #1E3746}
+.promo-page .w-popup .h-5 {color:#009CD9}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ BLOCK 3
+*/
+.block-3 .chat,
+.block-3 .date span,
+.block-2 .article-box,
+.block-2 .i-btn span {
+    background: #102938
+}
+.block-2 .i-btn span {box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.49)}
+.block-3 .chat .date span {color:#95A2A9}
+.block-3 .chat .message .online {
+    border-color: #102938;
+    background: #0DB25A;
+    left: 9px;
+    bottom: 6px;
+}
+@media (max-width: 720px) {
+    .block-3 .chat .message .online {
+        left: 3px;
+        bottom: 4px;
+    }
+}

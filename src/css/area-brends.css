@@ -1,0 +1,74 @@
+
+.septic-brends .swiper {
+    box-shadow: 0px 6px 40px rgb(0 60 92 / 7%);
+}
+.septic-brends .swiper-slide {
+    box-shadow: 0px 6px 40px rgb(0 60 92 / 7%);
+    border-radius: 6px;
+    background: white;
+}
+
+
+.septic-brends .swiper-wrapper.swiper-wrapper-block {
+    height: auto;
+    flex-wrap: wrap;
+    transform: translate3d(0, 0, 0) !important;
+    transition: none;
+    margin-top: 40px;
+}
+
+.septic-brends .swiper-wrapper-block .swiper-slide {
+    width: 25% !important;
+    height: auto;
+    padding: 0 15px 30px 15px
+}
+
+.septic-brends .ab-bl {
+    height:auto !important;
+    text-decoration:none !important;
+}
+
+.septic-brends .ab-bl .bg {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display:block;
+    position:relative;
+}
+.septic-brends .ab-bl .bg:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+}
+
+.septic-brends .ab-bl .txt {
+    position: relative;
+    padding: 9px 0 17px;
+}
+.septic-brends .ab-bl .txt:before {display:none}
+
+.septic-brends .ab-bl .txt .h-3 {
+    color:#405460;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight:400;
+}
+.septic-brends .ab-bl .txt .h-3 div {font-weight:bold}
+
+
+
+.septic-brends .sw-btns-bl {
+    margin-top: 40px;
+    text-align:center;
+}
+.septic-brends .swiper-button {
+    width:58px;
+    height:58px;
+}
+.septic-brends .swiper-button:before {background-size: auto 20px;}
+.septic-brends .swiper-button.prev {margin-right:24px}
+
+.septic-brends .swiper-pagination.swiper-pagination-fraction {display:none}
+
+.septic-brends .swiper-slide .txt {text-align:center}
