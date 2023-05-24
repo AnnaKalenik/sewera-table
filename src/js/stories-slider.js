@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.stories__wrapper').forEach(slider => {
         new Swiper(slider.querySelector('.swiper'), {
             loop: false,
-            allowTouchMove: true,
+            allowTouchMove: false,
 
             pagination: {
                 el: ".swiper-pagination",
