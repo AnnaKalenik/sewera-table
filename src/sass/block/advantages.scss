@@ -1,0 +1,63 @@
+.advantages {
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    &__block {
+        background: #F8F8F8;
+        border-radius: 8px;
+        padding: 40px;
+    }
+
+    &__title-2 {
+        padding: 0 0 30px !important;
+    }
+
+    &__lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 52px;
+    }
+
+    &__row {
+        position: relative;
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px ;
+        position: absolute;
+        left: -52px;
+        top: 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #102938;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(16, 41, 56, 0.8);
+        padding: 0 !important;
+    }
+}
+
+@import "advantages-media";

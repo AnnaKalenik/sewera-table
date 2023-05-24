@@ -14,7 +14,6 @@
         display: flex;
         justify-content: space-between;
         gap: 30px;
-        flex-wrap: wrap;
     }
 
     &__item {
@@ -30,14 +29,19 @@
     }
 
     &__wrapper {
-        max-height: 280px;
         position: relative;
         display: flex;
     }
 
     &__slider {
-        & .swiper-slide, .popular-services__image{
+        & .swiper-slide, .popular-services__image {
             height: 280px;
+        }
+
+        &_big {
+            & .swiper-slide, .popular-services__image {
+                height: 400px;
+            }
         }
     }
 
@@ -140,20 +144,12 @@
         font-size: 16px;
         line-height: 115%;
         color: #009CD9;
-        text-decoration: underline;
         cursor: pointer;
 
         &:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
-}
-
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
 }
 
 @import "popular-services-media";
