@@ -23,8 +23,6 @@
         background: #F8F8F8;
         border-radius: 8px;
         padding: 60px;
-        max-height: 565px;
-        height: 100%;
     }
 
     &__content {
@@ -39,6 +37,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        gap: 15px;
     }
 
     &__info-text {
@@ -95,9 +94,13 @@
         }
     }
 
-    &__link {
+    &__video {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__link {
         cursor: pointer;
     }
 

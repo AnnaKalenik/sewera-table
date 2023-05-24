@@ -8,8 +8,6 @@
 
         &__slide {
             padding: 40px;
-            max-height: 525px;
-            height: 100%;
         }
 
         &__content {
@@ -46,8 +44,6 @@
 
         &__slide {
             padding: 30px;
-            max-height: 505px;
-            height: 100%;
         }
 
         &__content {
@@ -104,7 +100,6 @@
         &__slide {
             border-radius: 6px;
             padding: 0px;
-            max-height: 100%;
             overflow: hidden;
         }
 
@@ -120,8 +115,6 @@
             grid-row: 2 / span 1;
 
             justify-content: flex-start;
-            gap: 15px;
-
             padding: 0 15px 15px;
         }
 
@@ -141,6 +134,12 @@
         &__video {
             grid-column: 1 / span 1;
             grid-row: 1 / span 1;
+
+            justify-content: stretch;
+        }
+
+        &__link {
+            width: 100%;
         }
 
         &__img-wrap {
