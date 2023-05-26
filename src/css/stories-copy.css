@@ -78,14 +78,14 @@
 }
 
 .insta-gallery__swiper .swiper-slide {
-    width: 245px;
-    height: 445px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     user-select: none;
+
+    background: #F8F8F8;
     border-radius: 8px;
+    padding: 60px;
 }
 
 .insta-gallery__preview {
