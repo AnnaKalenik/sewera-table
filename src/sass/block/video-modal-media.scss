@@ -91,5 +91,9 @@
 
     .video-block {
         border-radius: 0;
+
+        &__player {
+            border-radius: 0;
+        }
     }
 }
