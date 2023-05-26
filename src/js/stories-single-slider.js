@@ -4,6 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
             loop: false,
             allowTouchMove: false,
 
+            breakpoints: {
+                320: {
+                    allowTouchMove: true,
+                },
+                577: {
+                    allowTouchMove: false,
+                },
+            },
+
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
