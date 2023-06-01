@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.popular-services__wrapper').forEach(slider => {
         new Swiper(slider.querySelector('.swiper'), {
-            loop: true,
+            loop: false,
             allowTouchMove: true,
 
             navigation: {

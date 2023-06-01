@@ -1,5 +1,10 @@
-@media (max-width: 1024px) {
+@media (max-width: 1119px) {
     .table-block {
+        &__title-2 {
+            font-size: 26px;
+            line-height: 31px;
+        }
+
         & ul {
             font-size: 18px;
         }
@@ -10,10 +15,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .table-block {
         &__title-2 {
             padding: 0 0 20px !important;
+            font-size: 24px;
+            line-height: 120%;
         }
 
         &__date {
@@ -88,6 +95,12 @@
             justify-content: flex-start;
             text-align: left;
             padding: 0px 10px 7px;
+        }
+
+        &__head-content {
+            & li:first-child {
+                justify-content: space-between;
+            }
         }
 
         &__body-content {  

@@ -1,5 +1,10 @@
 @media (max-width: 1200px) {
     .popular-services {
+        &__title-2 {
+            font-size: 26px;
+            line-height: 31px;
+        }
+
         &__list {
             gap: 24px;
         }
@@ -24,6 +29,11 @@
 
 @media (max-width: 1023px) {
     .popular-services {
+        &__title-2 {
+            font-size: 24px;
+            line-height: 120%;
+        }
+
         &__list {
             flex-direction: column;
             gap: 30px;
@@ -60,6 +70,8 @@
 @media (max-width: 576px) {
     .popular-services {
         &__title-2 {
+            font-size: 22px;
+            line-height: 125%;
             padding: 0 0 20px !important;
         }
 
