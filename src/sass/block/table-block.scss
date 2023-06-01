@@ -59,6 +59,10 @@
         padding: 13.5px 20px;
     }
 
+    & li a {
+        color: #009CD9;
+    }
+
     & li:first-child {
         justify-content: flex-start;
     
@@ -115,10 +119,6 @@
             &::after {
                 transform: rotate(-180deg);
             }
-        }
-
-        &:hover li:first-child {
-            color: #009CD9;
         }
     }
 
