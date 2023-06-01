@@ -15,13 +15,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        gap: 30px;
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
+        gap: 60px 30px;
     }
 
     &__item {

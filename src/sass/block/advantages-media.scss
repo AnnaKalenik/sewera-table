@@ -5,7 +5,7 @@
         }
 
         &__lists {
-            gap: 20px;
+            gap: 60px 20px;
         }
 
         &__title {
@@ -34,10 +34,6 @@
             gap: 20px;
         }
 
-        &__list {
-            gap: 20px;
-        }
-
         &__title {
             font-size: 16px;
             line-height: 125%;
@@ -52,7 +48,6 @@
 
 @media (max-width: 576px) {
     .advantages {
-
         &__block {
             padding: 30px 15px;
         }
@@ -80,6 +75,5 @@
         &__title {
             line-height: 120%;
         }
-
     }
 }
