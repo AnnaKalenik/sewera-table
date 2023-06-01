@@ -119,6 +119,14 @@
         color: #586A74;
         text-decoration-line: underline;
         cursor: pointer;
+        width: fit-content;
+        display: inline-block;
+
+        &:hover{
+            color: #586A74;
+            text-decoration-line: underline;
+            opacity: 0.8;
+        }
     }
 
     &__row {
@@ -152,7 +160,7 @@
         cursor: pointer;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 }
