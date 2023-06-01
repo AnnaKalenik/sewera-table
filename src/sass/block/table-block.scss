@@ -59,8 +59,12 @@
         padding: 13.5px 20px;
     }
 
-    & li a:hover {
-        color: #009CD9;
+    & li a {
+        color: inherit;
+
+        &:hover {
+            color: #009CD9;
+        }
     }
 
     & li:first-child {
