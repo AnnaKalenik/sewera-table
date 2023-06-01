@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             items.forEach((item) => {
                 item.addEventListener('click', (e) => {
-                    let currentHead = item.querySelector('.table-block__head').querySelectorAll('li')[0];
+                    let currentHead = item.querySelector('.table-block__head');
                     let currentContentList = item.querySelectorAll('.table-block__body-content');
 
-                    if (e.target === currentHead) {
+                    if (e.target === currentHead.querySelectorAll('li')[0]) {
                         currentHead.classList.toggle('open');
 
                         currentContentList.forEach((content) => {
