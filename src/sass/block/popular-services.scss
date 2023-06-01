@@ -62,6 +62,11 @@
         cursor: pointer;
     }
 
+    &__arrow.swiper-button-disabled {
+        opacity: 0.4;
+        cursor: auto;
+    }
+
     &__prev {
         left: 10px;
         padding-right: 3px;

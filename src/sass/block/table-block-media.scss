@@ -1,4 +1,4 @@
-@media (max-width: 1119px) {
+@media (max-width: 1200px) {
     .table-block {
         &__title-2 {
             font-size: 26px;
@@ -11,11 +11,15 @@
 
         &__info {
             font-size: 18px;
+
+            &::before {
+                margin-top: 2px;
+            }
         }
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
     .table-block {
         &__title-2 {
             padding: 0 0 20px !important;
@@ -48,6 +52,10 @@
 
         &__info {
             font-size: 16px;
+            
+            &::before {
+                margin-top: 0px;
+            }
         }
     }
 }
@@ -118,6 +126,7 @@
             grid-template-columns: 16px 1fr;
             grid-template-rows: auto;
             align-items: start;
+            gap: 10px;
             border-radius: 6px;
             padding: 10px;
         }

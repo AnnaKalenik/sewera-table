@@ -143,7 +143,7 @@
         }
 
         &__img-wrap {
-            height: 305.64px;
+            height: 380px;
             width: 100%;
         }
 
@@ -154,6 +154,14 @@
         &__icon-play {
             width: 57.64px;
             height: 57.64px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .stories {
+        &__img-wrap {
+            height: 305.64px;
         }
     }
 }
