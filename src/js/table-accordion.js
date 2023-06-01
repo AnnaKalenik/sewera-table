@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let currentHead = item.querySelector('.table-block__head');
                     let currentContentList = item.querySelectorAll('.table-block__body-content');
 
-                    if (e.target === currentHead.querySelectorAll('li')[0]) {
+                    if (e.target === currentHead.querySelectorAll('li')[0] || e.target === currentHead.querySelectorAll('li')[1]) {
                         currentHead.classList.toggle('open');
 
                         currentContentList.forEach((content) => {
